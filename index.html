@@ -1,0 +1,211 @@
+body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+
+    header {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: white;
+        text-align: center;
+        padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.2rem;
+    }
+
+    header p {
+        margin-top: 0.5rem;
+        font-size: 1.1rem;
+        opacity: 0.9;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .card {
+        background-color: var(--card-bg);
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        border: 1px solid var(--border);
+    }
+
+    .card h2 {
+        color: var(--primary);
+        margin-top: 0;
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 0.5rem;
+        font-size: 1.4rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+    }
+
+    .grid-item {
+        background: #f9f9f9;
+        padding: 1rem;
+        border-radius: 6px;
+        border-left: 4px solid var(--primary);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 0.75rem;
+        border-bottom: 1px solid var(--border);
+    }
+
+    th {
+        background-color: #eaeaea;
+        color: var(--primary);
+    }
+
+    .badge-mito {
+        background-color: #e74c3c;
+        color: white;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.85rem;
+    }
+
+    .badge-verdade {
+        background-color: #2ecc71;
+        color: white;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.85rem;
+    }
+
+    .badge-parcial {
+        background-color: #f39c12;
+        color: white;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.85rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1.5rem;
+        color: #777;
+        font-size: 0.9rem;
+        border-top: 1px solid var(--border);
+        margin-top: 2rem;
+    }
+</style>
+<header>
+    <h1>Compreendendo o TDAH</h1>
+    <p>Um Guia Completo Baseado em Evidências Científicas</p>
+</header>
+
+<div class="container">
+
+    <!-- O que é -->
+    <section class="card">
+        <h2>1. Conceito e Prevalência</h2>
+        <p>O <strong>Transtorno do Déficit de Atenção com Hiperatividade (TDAH)</strong> é uma condição neurobiológica caracterizada por padrões persistentes de desatenção, hiperatividade e impulsividade. Afeta cerca de <strong>5% das crianças</strong> e <strong>2,5% dos adultos</strong> no mundo.</p>
+        <ul>
+            <li><strong>Origem Neurobiológica:</strong> Envolve diferenças na estrutura e no funcionamento cerebral, especialmente no controle de impulsos e na atenção.</li>
+            <li><strong>Independente da Vontade:</strong> Não é preguiça nem falta de caráter; afeta a capacidade de autorregulação.</li>
+            <li><strong>Condição Continuada:</strong> Inicia-se na infância e pode persistir durante a vida adulta.</li>
+        </ul>
+    </section>
+
+    <!-- Tipos -->
+    <section class="card">
+        <h2>2. Apresentações do TDAH (DSM-5)</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <h3>Predominantemente Desatento</h3>
+                <p>Dificuldade de foco, esquecimentos, perda de objetos, facilidade em se distrair e problemas de organização.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Predominantemente Hiperativo-Impulsivo</h3>
+                <p>Agitação motora, dificuldade em permanecer sentado, fala em excesso e ações impensadas.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Apresentação Combinada</h3>
+                <p>A forma mais comum. Reúne sintomas significativos tanto de desatenção quanto de hiperatividade/impulsividade.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fases da Vida -->
+    <section class="card">
+        <h2>3. TDAH ao Longo da Vida</h2>
+        <p><strong>Em Crianças e Adolescentes:</strong> Desafios na sala de aula, problemas de relacionamento, baixo desempenho acadêmico e frustração. Exige adaptações escolares, apoio familiar e reforço positivo.</p>
+        <p><strong>Em Adultos:</strong> Pode se manifestar por procrastinação crônica, má gestão de tempo, impulsividade e instabilidade profissional. Quando bem manejado, destaca-se pela alta criatividade, capacidade de hiperfoco e energia para novos projetos.</p>
+    </section>
+
+    <!-- Mitos e Verdades -->
+    <section class="card">
+        <h2>4. Mitos vs. Verdades</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Afirmação</th>
+                    <th>Veredito</th>
+                    <th>Explicação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>"TDAH é preguiça ou falta de disciplina"</td>
+                    <td><span class="badge-mito">Mito</span></td>
+                    <td>Trata-se de uma condição neurobiológica de base genética.</td>
+                </tr>
+                <tr>
+                    <td>"Crianças superam o transtorno"</td>
+                    <td><span class="badge-parcial">Parcial</span></td>
+                    <td>Sintomas podem se atenuar, mas ~60% persistem na vida adulta.</td>
+                </tr>
+                <tr>
+                    <td>"Medicação altera a personalidade"</td>
+                    <td><span class="badge-mito">Mito</span></td>
+                    <td>Quando bem indicada, reduz sintomas sem alterar quem a pessoa é.</td>
+                </tr>
+                <tr>
+                    <td>"TDAH só existe em meninos"</td>
+                    <td><span class="badge-mito">Mito</span></td>
+                    <td>Meninas costumam apresentar sintomas de desatenção e são subdiagnosticadas.</td>
+                </tr>
+                <tr>
+                    <td>"Dieta e exercícios ajudam"</td>
+                    <td><span class="badge-verdade">Verdade</span></td>
+                    <td>Hábitos saudáveis complementam o tratamento principal.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Diagnóstico e Estratégias -->
+    <section class="card">
+        <h2>5. Avaliação e Manejo Diário</h2>
+        <p><strong>Diagnóstico:</strong> Clínico e multidisciplinar (realizado por psiquiatras, neurologistas e psicólogos). Envolve entrevistas, escalas (ASRS, SNAP-IV) e histórico de vida.</p>
+        <p><strong>Estratégias Práticas:</strong> Uso de rotinas/planners, aplicação da Técnica Pomodoro, prática regular de exercícios físicos e meditação/mindfulness.</p>
+        <p><strong>Recursos e Apoio:</strong> Terapia Cognitivo-Comportamental (TCC), acompanhamento médico, ferramentas digitais (Notion, Todoist) e suporte via ABDA (www.tdah.org.br).</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>Compreender o TDAH é o primeiro passo para transformar desafios em oportunidades de crescimento.</p>
+</footer>
